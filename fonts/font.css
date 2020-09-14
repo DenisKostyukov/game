@@ -1,0 +1,8 @@
+@font-face {
+  font-family: SF; /* Имя шрифта */
+  src: url(../fonts/17023.ttf); /* Путь к файлу со шрифтом */
+}
+@font-face {
+  font-family: "Bebas Neue";
+  src: url("../fonts/11585.ttf");
+}

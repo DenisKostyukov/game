@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <link href="node_modules/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <link href="fonts/font.css" rel="stylesheet">
+  <title>Document</title>
+</head>
+<body>
+<!--
+<div class="swiper-container">
+  <div class=" swiper-wrapper">
+    <img src="images/slide1.jpg" alt="" class="swiper-slide">
+    <img src="images/slide2.jpg" alt="" class="swiper-slide">
+    <img src="images/slide3.jpg" alt="" class="swiper-slide">
+    <img src="images/slide4.jpg" alt="" class="swiper-slide">
+  </div>
+
+</div>
+<div class="swiper-pagination"></div>
+-->
+<div class="wrapper">
+  <header class="header">
+    <div class="container">
+      <div class="header__inner">
+        <img alt="" class="header__logo" src="images/logo.png">
+        <nav class="navigation">
+          <a class="nav__link" href="#">main</a>
+          <a class="nav__link" href="#">about</a>
+          <a class="nav__link" href="#">game features</a>
+          <a class="nav__link" href="#">System requirements</a>
+          <a class="nav__link" href="#">quotes</a>
+        </nav>
+        <div class="header__game">
+          <symbol id="xbox">
+            <svg class="header__game-icon" height="29" style=" margin-right: 17px;" viewBox="0 0 31 29" width="31">
+              <path
+                  d="M24.1587 0.863779C23.8594 0.658661 23.478 0.641079 23.1553 0.822756C21.4009 1.83076 19.7052 2.98529 18.1034 4.25702C17.8922 4.42697 17.7631 4.67898 17.7513 4.94856C17.7396 5.21814 17.8452 5.48187 18.0388 5.6694C21.3599 8.82822 25.96 18.5157 27.0162 22.9697C24.7278 19.1017 19.6231 10.0003 16.2845 6.88839C15.9265 6.55434 15.3633 6.55434 15.0053 6.88839C11.6608 10.0003 6.5737 19.1076 4.28536 22.9814C5.34152 18.5274 9.92992 8.82822 13.2509 5.6694C13.4504 5.48187 13.5561 5.21814 13.5443 4.94856C13.5326 4.67898 13.4035 4.42697 13.1923 4.25702C11.5904 2.98529 9.88885 1.83076 8.14033 0.822756C7.82935 0.641079 7.43622 0.658661 7.13698 0.863779C3.05905 3.67097 0.624023 8.2832 0.624023 13.206C0.624023 16.8044 1.92075 20.2738 4.28536 22.9814C7.11351 26.2984 11.2501 28.209 15.6449 28.209C20.0397 28.209 24.1822 26.3043 27.0162 22.9755C29.369 20.2797 30.6658 16.8103 30.6658 13.206C30.6658 8.2832 28.2307 3.67097 24.1587 0.863779Z"/>
+            </svg>
+          </symbol>
+          <symbol display="none" id="steam">
+            <svg class="header__game-icon" height="31" viewBox="0 0 31 31" width="31">
+              <path
+                  d="M15.7746 30.5089C24.0936 30.5089 30.8375 23.7932 30.8375 15.5089C30.8375 7.22461 24.0936 0.508881 15.7746 0.508881C7.45558 0.508881 0.71167 7.22461 0.71167 15.5089C0.71167 17.0369 0.941106 18.5116 1.36754 19.9005C1.47636 19.9201 1.6523 19.9646 1.90866 20.0395L1.50834 13.7669C1.50834 13.6519 1.7031 13.5966 1.88153 13.546C1.97946 13.5182 2.07247 13.4918 2.12567 13.4577C2.27094 13.3662 5.26258 14.454 5.42239 14.5262L9.248 16.2495C10.2359 15.6285 11.4175 15.3782 12.5797 15.5467L16.0566 11.3252C16.1002 7.95572 18.8604 5.24088 22.2551 5.23606C25.4269 5.26976 28.0564 7.67653 28.3567 10.8101C28.6763 14.1989 26.1775 17.2025 22.7684 17.525L16.9767 21.6406C16.6232 23.4457 15.3254 24.9235 13.5724 25.5107C10.8848 26.4157 7.96472 24.9812 7.05917 22.3049L5.04467 21.6406C4.89531 21.5934 2.15386 20.4576 1.41129 20.0406C3.34051 26.1099 9.04168 30.5089 15.7746 30.5089ZM25.3546 11.3973C25.3546 13.0987 23.967 14.478 22.2553 14.478C20.5436 14.478 19.156 13.0987 19.156 11.3973C19.156 9.69591 20.5436 8.31664 22.2553 8.31664C23.967 8.31664 25.3546 9.69591 25.3546 11.3973ZM24.3236 11.3973C24.3236 12.5325 23.3978 13.4527 22.2557 13.4527C21.1137 13.4527 20.1879 12.5325 20.1879 11.3973C20.1879 10.2622 21.1137 9.34195 22.2557 9.34195C23.3978 9.34195 24.3236 10.2622 24.3236 11.3973ZM10.5804 23.412C10.9969 23.6142 11.4569 23.7201 11.9218 23.7201C12.2753 23.7201 12.6191 23.6623 12.9581 23.5516C13.7377 23.282 14.3721 22.7189 14.7304 21.9824C15.4761 20.4469 14.8272 18.6081 13.2873 17.8668C13.0259 17.7417 12.7208 17.8476 12.5949 18.1027C12.469 18.3626 12.5755 18.6659 12.8322 18.791C12.8661 18.8055 12.9 18.8199 12.9338 18.8392C13.9508 19.359 14.343 20.5961 13.82 21.6069C13.297 22.6178 12.0477 23.0077 11.0356 22.4878C10.7741 22.3627 10.469 22.4686 10.3431 22.7237C10.2172 22.9836 10.3238 23.2869 10.5804 23.412Z"/>
+            </svg>
+          </symbol>
+          <svg class="xbox-icon" style="display: none;">
+            <use xlink:href="#xbox"></use>
+          </svg>
+          <svg class="steam-icon" style="display: none; ">
+            <use xlink:href="#steam"></use>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="content">
+    <div class="main__overlay"
+         style="background: radial-gradient(189.96% 61.18% at 50% 38.82%, rgba(255, 181, 72, 0) 0%, rgba(52, 44, 29, 0.80319) 73.22%, #08090A 99.74%);"></div>
+    <section class="main">
+      <div class="container">
+        <div class="main__inner">
+          <h1 class="title">SURVIVE AT ALL COSTS</h1>
+          <h3 class="subtitle">Experience new social battle royale game</h3>
+          <button class="main__btn">
+              <span class="main__btn-text">Buy Now on Steam</span>
+              <span class="main__btn-text">$14.99</span>
+          </button>
+        </div>
+      </div>
+    </section>
+  </div>
+</div>
+
+<!-- Swiper JS -->
+<script src="node_modules/swiper/swiper-bundle.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+
+</html>
